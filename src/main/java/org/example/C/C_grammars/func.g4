@@ -1,0 +1,1 @@
+grammar func;import identifier,block;debug:func+;func:((Type ID)('('args?')')('\n')?('{'statement*'}'));args:arg (','arg)*;arg:Type ID ('='expr)?;WS:[ \t\r\n]+ ->skip;
