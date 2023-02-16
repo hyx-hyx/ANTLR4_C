@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package antlr;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -38,6 +37,16 @@ public interface if_stmtListener extends ParseTreeListener {
 	 */
 	void exitExpr(if_stmtParser.ExprContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link if_stmtParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatements(if_stmtParser.StatementsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link if_stmtParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatements(if_stmtParser.StatementsContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link if_stmtParser#block}.
 	 * @param ctx the parse tree
 	 */
@@ -68,6 +77,26 @@ public interface if_stmtListener extends ParseTreeListener {
 	 */
 	void exitWhile_stmt(if_stmtParser.While_stmtContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link if_stmtParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterType_assign(if_stmtParser.Type_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link if_stmtParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitType_assign(if_stmtParser.Type_assignContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link if_stmtParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpr_assign(if_stmtParser.Expr_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link if_stmtParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpr_assign(if_stmtParser.Expr_assignContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link if_stmtParser#assign_stmt}.
 	 * @param ctx the parse tree
 	 */
@@ -97,26 +126,6 @@ public interface if_stmtListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCallstmt(if_stmtParser.CallstmtContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link if_stmtParser#for_first_expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterFor_first_expr(if_stmtParser.For_first_exprContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link if_stmtParser#for_first_expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitFor_first_expr(if_stmtParser.For_first_exprContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link if_stmtParser#for_third_expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterFor_third_expr(if_stmtParser.For_third_exprContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link if_stmtParser#for_third_expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitFor_third_expr(if_stmtParser.For_third_exprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link if_stmtParser#for_stmt}.
 	 * @param ctx the parse tree

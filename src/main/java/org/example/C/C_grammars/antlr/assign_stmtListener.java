@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package antlr;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -18,25 +17,25 @@ public interface assign_stmtListener extends ParseTreeListener {
 	 */
 	void exitDebug(assign_stmtParser.DebugContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link assign_stmtParser#type_assign_stmt}.
+	 * Enter a parse tree produced by {@link assign_stmtParser#type_assign}.
 	 * @param ctx the parse tree
 	 */
-	void enterType_assign_stmt(assign_stmtParser.Type_assign_stmtContext ctx);
+	void enterType_assign(assign_stmtParser.Type_assignContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link assign_stmtParser#type_assign_stmt}.
+	 * Exit a parse tree produced by {@link assign_stmtParser#type_assign}.
 	 * @param ctx the parse tree
 	 */
-	void exitType_assign_stmt(assign_stmtParser.Type_assign_stmtContext ctx);
+	void exitType_assign(assign_stmtParser.Type_assignContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link assign_stmtParser#expr_assign_stmt}.
+	 * Enter a parse tree produced by {@link assign_stmtParser#expr_assign}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr_assign_stmt(assign_stmtParser.Expr_assign_stmtContext ctx);
+	void enterExpr_assign(assign_stmtParser.Expr_assignContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link assign_stmtParser#expr_assign_stmt}.
+	 * Exit a parse tree produced by {@link assign_stmtParser#expr_assign}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr_assign_stmt(assign_stmtParser.Expr_assign_stmtContext ctx);
+	void exitExpr_assign(assign_stmtParser.Expr_assignContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link assign_stmtParser#assign_stmt}.
 	 * @param ctx the parse tree

@@ -1,5 +1,5 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
+package antlr;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**

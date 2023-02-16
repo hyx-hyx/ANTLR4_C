@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -36,6 +35,18 @@ public class for_stmtBaseListener implements for_stmtListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFor_stmt(for_stmtParser.For_stmtContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStatements(for_stmtParser.StatementsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStatements(for_stmtParser.StatementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -101,6 +112,30 @@ public class for_stmtBaseListener implements for_stmtListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterType_assign(for_stmtParser.Type_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitType_assign(for_stmtParser.Type_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExpr_assign(for_stmtParser.Expr_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExpr_assign(for_stmtParser.Expr_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterAssign_stmt(for_stmtParser.Assign_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -108,6 +143,30 @@ public class for_stmtBaseListener implements for_stmtListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAssign_stmt(for_stmtParser.Assign_stmtContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCall(for_stmtParser.CallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCall(for_stmtParser.CallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCallstmt(for_stmtParser.CallstmtContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCallstmt(for_stmtParser.CallstmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

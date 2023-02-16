@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -24,6 +23,18 @@ public class blockBaseListener implements blockListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDebug(blockParser.DebugContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStatements(blockParser.StatementsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStatements(blockParser.StatementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -89,6 +100,30 @@ public class blockBaseListener implements blockListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterType_assign(blockParser.Type_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitType_assign(blockParser.Type_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExpr_assign(blockParser.Expr_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExpr_assign(blockParser.Expr_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterAssign_stmt(blockParser.Assign_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -96,6 +131,30 @@ public class blockBaseListener implements blockListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAssign_stmt(blockParser.Assign_stmtContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCall(blockParser.CallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCall(blockParser.CallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCallstmt(blockParser.CallstmtContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCallstmt(blockParser.CallstmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

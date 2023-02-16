@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package antlr;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -47,6 +46,16 @@ public interface funcListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitArg(funcParser.ArgContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link funcParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatements(funcParser.StatementsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link funcParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatements(funcParser.StatementsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link funcParser#block}.
 	 * @param ctx the parse tree
@@ -98,6 +107,26 @@ public interface funcListener extends ParseTreeListener {
 	 */
 	void exitWhile_stmt(funcParser.While_stmtContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link funcParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterType_assign(funcParser.Type_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link funcParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitType_assign(funcParser.Type_assignContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link funcParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpr_assign(funcParser.Expr_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link funcParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpr_assign(funcParser.Expr_assignContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link funcParser#assign_stmt}.
 	 * @param ctx the parse tree
 	 */
@@ -127,26 +156,6 @@ public interface funcListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCallstmt(funcParser.CallstmtContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link funcParser#for_first_expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterFor_first_expr(funcParser.For_first_exprContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link funcParser#for_first_expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitFor_first_expr(funcParser.For_first_exprContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link funcParser#for_third_expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterFor_third_expr(funcParser.For_third_exprContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link funcParser#for_third_expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitFor_third_expr(funcParser.For_third_exprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link funcParser#for_stmt}.
 	 * @param ctx the parse tree

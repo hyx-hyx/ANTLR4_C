@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -18,15 +17,25 @@ public interface CListener extends ParseTreeListener {
 	 */
 	void exitDebug(CParser.DebugContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CParser#c_parser}.
+	 * Enter a parse tree produced by {@link CParser#head}.
 	 * @param ctx the parse tree
 	 */
-	void enterC_parser(CParser.C_parserContext ctx);
+	void enterHead(CParser.HeadContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CParser#c_parser}.
+	 * Exit a parse tree produced by {@link CParser#head}.
 	 * @param ctx the parse tree
 	 */
-	void exitC_parser(CParser.C_parserContext ctx);
+	void exitHead(CParser.HeadContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#preprocess}.
+	 * @param ctx the parse tree
+	 */
+	void enterPreprocess(CParser.PreprocessContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#preprocess}.
+	 * @param ctx the parse tree
+	 */
+	void exitPreprocess(CParser.PreprocessContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CParser#statement}.
 	 * @param ctx the parse tree
@@ -38,25 +47,45 @@ public interface CListener extends ParseTreeListener {
 	 */
 	void exitStatement(CParser.StatementContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CParser#define_stmt}.
+	 * Enter a parse tree produced by {@link CParser#vardecl}.
 	 * @param ctx the parse tree
 	 */
-	void enterDefine_stmt(CParser.Define_stmtContext ctx);
+	void enterVardecl(CParser.VardeclContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CParser#define_stmt}.
+	 * Exit a parse tree produced by {@link CParser#vardecl}.
 	 * @param ctx the parse tree
 	 */
-	void exitDefine_stmt(CParser.Define_stmtContext ctx);
+	void exitVardecl(CParser.VardeclContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CParser#assign_stmt}.
+	 * Enter a parse tree produced by {@link CParser#while_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterAssign_stmt(CParser.Assign_stmtContext ctx);
+	void enterWhile_stmt(CParser.While_stmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CParser#assign_stmt}.
+	 * Exit a parse tree produced by {@link CParser#while_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitAssign_stmt(CParser.Assign_stmtContext ctx);
+	void exitWhile_stmt(CParser.While_stmtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#file}.
+	 * @param ctx the parse tree
+	 */
+	void enterFile(CParser.FileContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#file}.
+	 * @param ctx the parse tree
+	 */
+	void exitFile(CParser.FileContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#for_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterFor_stmt(CParser.For_stmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#for_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitFor_stmt(CParser.For_stmtContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CParser#func}.
 	 * @param ctx the parse tree
@@ -88,16 +117,6 @@ public interface CListener extends ParseTreeListener {
 	 */
 	void exitArg(CParser.ArgContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CParser#block}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlock(CParser.BlockContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CParser#block}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlock(CParser.BlockContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link CParser#expr}.
 	 * @param ctx the parse tree
 	 */
@@ -108,23 +127,83 @@ public interface CListener extends ParseTreeListener {
 	 */
 	void exitExpr(CParser.ExprContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CParser#stmt}.
+	 * Enter a parse tree produced by {@link CParser#if_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterStmt(CParser.StmtContext ctx);
+	void enterIf_stmt(CParser.If_stmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CParser#stmt}.
+	 * Exit a parse tree produced by {@link CParser#if_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitStmt(CParser.StmtContext ctx);
+	void exitIf_stmt(CParser.If_stmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CParser#vardecl}.
+	 * Enter a parse tree produced by {@link CParser#call}.
 	 * @param ctx the parse tree
 	 */
-	void enterVardecl(CParser.VardeclContext ctx);
+	void enterCall(CParser.CallContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CParser#vardecl}.
+	 * Exit a parse tree produced by {@link CParser#call}.
 	 * @param ctx the parse tree
 	 */
-	void exitVardecl(CParser.VardeclContext ctx);
+	void exitCall(CParser.CallContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#callstmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterCallstmt(CParser.CallstmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#callstmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitCallstmt(CParser.CallstmtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatements(CParser.StatementsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatements(CParser.StatementsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#block}.
+	 * @param ctx the parse tree
+	 */
+	void enterBlock(CParser.BlockContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#block}.
+	 * @param ctx the parse tree
+	 */
+	void exitBlock(CParser.BlockContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterType_assign(CParser.Type_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitType_assign(CParser.Type_assignContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpr_assign(CParser.Expr_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpr_assign(CParser.Expr_assignContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CParser#assign_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterAssign_stmt(CParser.Assign_stmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CParser#assign_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitAssign_stmt(CParser.Assign_stmtContext ctx);
 }

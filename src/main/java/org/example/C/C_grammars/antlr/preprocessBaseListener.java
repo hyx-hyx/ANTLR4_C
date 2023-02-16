@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -24,6 +23,18 @@ public class preprocessBaseListener implements preprocessListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDebug(preprocessParser.DebugContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterHead(preprocessParser.HeadContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitHead(preprocessParser.HeadContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

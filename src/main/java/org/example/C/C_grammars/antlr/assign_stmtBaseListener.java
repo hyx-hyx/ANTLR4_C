@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package antlr;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -29,25 +28,25 @@ public class assign_stmtBaseListener implements assign_stmtListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterType_assign_stmt(assign_stmtParser.Type_assign_stmtContext ctx) { }
+	@Override public void enterType_assign(assign_stmtParser.Type_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitType_assign_stmt(assign_stmtParser.Type_assign_stmtContext ctx) { }
+	@Override public void exitType_assign(assign_stmtParser.Type_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpr_assign_stmt(assign_stmtParser.Expr_assign_stmtContext ctx) { }
+	@Override public void enterExpr_assign(assign_stmtParser.Expr_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpr_assign_stmt(assign_stmtParser.Expr_assign_stmtContext ctx) { }
+	@Override public void exitExpr_assign(assign_stmtParser.Expr_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

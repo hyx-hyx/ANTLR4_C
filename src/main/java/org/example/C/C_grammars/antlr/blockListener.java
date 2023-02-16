@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -17,6 +16,16 @@ public interface blockListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDebug(blockParser.DebugContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link blockParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatements(blockParser.StatementsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link blockParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatements(blockParser.StatementsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link blockParser#block}.
 	 * @param ctx the parse tree
@@ -68,6 +77,26 @@ public interface blockListener extends ParseTreeListener {
 	 */
 	void exitWhile_stmt(blockParser.While_stmtContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link blockParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterType_assign(blockParser.Type_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link blockParser#type_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitType_assign(blockParser.Type_assignContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link blockParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpr_assign(blockParser.Expr_assignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link blockParser#expr_assign}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpr_assign(blockParser.Expr_assignContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link blockParser#assign_stmt}.
 	 * @param ctx the parse tree
 	 */
@@ -77,6 +106,26 @@ public interface blockListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAssign_stmt(blockParser.Assign_stmtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link blockParser#call}.
+	 * @param ctx the parse tree
+	 */
+	void enterCall(blockParser.CallContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link blockParser#call}.
+	 * @param ctx the parse tree
+	 */
+	void exitCall(blockParser.CallContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link blockParser#callstmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterCallstmt(blockParser.CallstmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link blockParser#callstmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitCallstmt(blockParser.CallstmtContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link blockParser#for_stmt}.
 	 * @param ctx the parse tree

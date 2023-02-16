@@ -1,11 +1,11 @@
 package org.example.C;
 
+import org.example.C.C_grammars.*;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
-import org.example.C.C_grammars.antlr.preprocessLexer;
-import org.example.C_grammars.antlr.preprocessParser;
+
 
 import java.io.*;
 
@@ -15,11 +15,11 @@ public class antlr4
     {
         InputStream inputStream=new FileInputStream("src\\main\\java\\org\\example\\input.txt");
         CharStream charStream= CharStreams.fromStream(inputStream);
-        preprocessLexer preprocesslexer=new preprocessLexer(charStream);
-        CommonTokenStream commonTokenStream=new CommonTokenStream(preprocesslexer);
-        preprocessParser preprocessparser=new preprocessParser(commonTokenStream);
-        ParseTree parseTree=preprocessparser.debug();
-        System.out.println(parseTree.toStringTree(preprocessparser));
+        CLexer=new CLexer(charStream);
+        CommonTokenStream commonTokenStream=new CommonTokenStream(Clexer);
+        CParser Cparser=new CParser(commonTokenStream);
+        ParseTree parseTree=Cparser.debug();
+        System.out.println(parseTree.toStringTree(Cparser));
     }
 
 }

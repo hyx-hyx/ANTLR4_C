@@ -227,10 +227,10 @@
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/src/main/java/org/example/C/C_grammars/block.g4" />
           <option name="autoGen" value="true" />
-          <option name="outputDir" value="" />
+          <option name="outputDir" value="src/main/java/org/example/C/C_grammars" />
           <option name="libDir" value="" />
           <option name="encoding" value="" />
-          <option name="pkg" value="" />
+          <option name="pkg" value="antlr" />
           <option name="language" value="" />
           <option name="generateVisitor" value="true" />
         </PerGrammarGenerationSettings>
@@ -248,6 +248,46 @@
           <option name="fileName" value="$PROJECT_DIR$/src/main/java/org/example/C/C_grammars/vardecl.g4" />
           <option name="autoGen" value="true" />
           <option name="outputDir" value="src\main\java\org\example\C\C_grammars" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="antlr" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/java/org/example/C/C_grammars/file.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="src/main/java/org/example/C/C_grammars" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="antlr" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/java/org/example/C/C_grammars/C.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="src/main/java/org/example/C/C_grammars" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="antlr" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/java/org/example/C/C_grammars/ArrayInit.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="src/main/java/org/example/C/C_grammars" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="antlr" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/java/org/example/C/C_grammars/callstmt.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="src/main/java/org/example/C/C_grammars" />
           <option name="libDir" value="" />
           <option name="encoding" value="" />
           <option name="pkg" value="antlr" />

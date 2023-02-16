@@ -17,17 +17,17 @@ public interface assign_stmtVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDebug(assign_stmtParser.DebugContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link assign_stmtParser#type_assign_stmt}.
+	 * Visit a parse tree produced by {@link assign_stmtParser#type_assign}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitType_assign_stmt(assign_stmtParser.Type_assign_stmtContext ctx);
+	T visitType_assign(assign_stmtParser.Type_assignContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link assign_stmtParser#expr_assign_stmt}.
+	 * Visit a parse tree produced by {@link assign_stmtParser#expr_assign}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpr_assign_stmt(assign_stmtParser.Expr_assign_stmtContext ctx);
+	T visitExpr_assign(assign_stmtParser.Expr_assignContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link assign_stmtParser#assign_stmt}.
 	 * @param ctx the parse tree

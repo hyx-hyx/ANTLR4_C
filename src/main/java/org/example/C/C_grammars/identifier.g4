@@ -13,6 +13,13 @@ COMMENT:'/*'.*? '*/' ->skip;
 //include,define
 //PRE:'include'|'define';
 
-ID:[_a-zA-Z]([_a-zA-Z0-9]*);
+ID  :   [_a-zA-Z]([_a-zA-Z0-9]*)
+        {
+        if ( keywords.containsKey(getText()) ) {
+            setType(keywords.get(getText())); // reset token type
+        }
+        }
+    ;
+
 NEWLINE:'\r'?'\n';
 WS :[ \t\r\n]+ -> skip;

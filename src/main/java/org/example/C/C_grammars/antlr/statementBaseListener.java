@@ -1,5 +1,4 @@
 // Generated from java-escape by ANTLR 4.11.1
-package antlr;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -65,6 +64,18 @@ public class statementBaseListener implements statementListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterStatements(statementParser.StatementsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStatements(statementParser.StatementsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterBlock(statementParser.BlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -84,6 +95,30 @@ public class statementBaseListener implements statementListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitWhile_stmt(statementParser.While_stmtContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterType_assign(statementParser.Type_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitType_assign(statementParser.Type_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExpr_assign(statementParser.Expr_assignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExpr_assign(statementParser.Expr_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -120,30 +155,6 @@ public class statementBaseListener implements statementListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCallstmt(statementParser.CallstmtContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFor_first_expr(statementParser.For_first_exprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFor_first_expr(statementParser.For_first_exprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFor_third_expr(statementParser.For_third_exprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFor_third_expr(statementParser.For_third_exprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -1,10 +1,12 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class ArrayInitParser extends Parser {
@@ -106,11 +108,6 @@ public class ArrayInitParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ArrayInitListener ) ((ArrayInitListener)listener).exitDebug(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ArrayInitVisitor ) return ((ArrayInitVisitor<? extends T>)visitor).visitDebug(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final DebugContext debug() throws RecognitionException {
@@ -172,11 +169,6 @@ public class ArrayInitParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ArrayInitListener ) ((ArrayInitListener)listener).exitValue(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ArrayInitVisitor ) return ((ArrayInitVisitor<? extends T>)visitor).visitValue(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 

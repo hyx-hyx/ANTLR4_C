@@ -25,14 +25,14 @@ public class assign_stmtBaseVisitor<T> extends AbstractParseTreeVisitor<T> imple
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitType_assign_stmt(assign_stmtParser.Type_assign_stmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitType_assign(assign_stmtParser.Type_assignContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitExpr_assign_stmt(assign_stmtParser.Expr_assign_stmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitExpr_assign(assign_stmtParser.Expr_assignContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

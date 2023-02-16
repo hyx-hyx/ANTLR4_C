@@ -1,5 +1,5 @@
 // Generated from java-escape by ANTLR 4.11.1
-package org.example.C.C_grammars.antlr;
+package antlr;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -16,6 +16,12 @@ public interface blockVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDebug(blockParser.DebugContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link blockParser#statements}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStatements(blockParser.StatementsContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link blockParser#block}.
 	 * @param ctx the parse tree
@@ -47,11 +53,35 @@ public interface blockVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitWhile_stmt(blockParser.While_stmtContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link blockParser#type_assign}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitType_assign(blockParser.Type_assignContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link blockParser#expr_assign}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExpr_assign(blockParser.Expr_assignContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link blockParser#assign_stmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitAssign_stmt(blockParser.Assign_stmtContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link blockParser#call}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCall(blockParser.CallContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link blockParser#callstmt}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCallstmt(blockParser.CallstmtContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link blockParser#for_stmt}.
 	 * @param ctx the parse tree
