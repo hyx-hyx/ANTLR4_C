@@ -41,7 +41,7 @@ file:preprocess(vardecl|type_assign)*
 for_stmt:(FOR
             ('('(type_assign|expr_assign)';' (expr|)';' (expr_assign|expr|)')')
             (';'|block|));
-func:((Type ID)('('args?')')('\n')?('{'statement*'}'));
+func:((Type ID)('('args?')')(('\n'?'{'statements'}')?|';'));
 args:arg (','arg)*;
 arg:Type ID ('='expr)?;
 expr:ID'['expr']'
@@ -73,8 +73,11 @@ expr:ID'['expr']'
     ;
 
 if_stmt:'if' '(' expr')'
-            ('\n'?'{'statements'}')?
-            ('\n'?'else' '\n'?'{'statements'}')?;
+            (('\n'?(('{'statements'}')|statement))|('\n'?))
+            ('\n'?'else'
+                    ('\n')? (
+                                ('{'statements'}'|statement)
+                            ));
 call:ID'('(((ID|expr)(','(ID|expr))*)|)')';
 callstmt:call';';
 statements:statement*'\n'?;
